@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup de Base de Datos - TechSolutions ERP</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../images/logo.png" alt="TechSolutions ERP Logo" class="logo">
+            <h1>TechSolutions ERP</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="instalacion.html">Instalación</a></li>
+                <li><a href="modulos.html">Módulos</a></li>
+                <li><a href="backup.html">Backup</a></li>
+                <li><a href="conclusiones.html">Conclusiones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="backup-guide">
+        <h1>Copia de Seguridad y Restauración de Base de Datos</h1>
+        
+        <section>
+            <h2>Acceso a pgAdmin</h2>
+            <p>Para gestionar las copias de seguridad necesitamos acceder a pgAdmin, la herramienta de administración de PostgreSQL:</p>
+            <ol>
+                <li>Buscar "pgAdmin" en la barra de búsqueda de Windows</li>
+                <li>Iniciar sesión con las credenciales configuradas durante la instalación de Odoo</li>
+            </ol>
+            <img src="../media/image12.png" alt="Acceso a pgAdmin">
+        </section>
+
+        <section>
+            <h2>Crear una copia de seguridad (Backup)</h2>
+            <ol>
+                <li>Haz clic derecho sobre la base de datos que quieres respaldar</li>
+                <li>Selecciona la opción "Backup"</li>
+                <li>En el primer recuadro, haz clic en los 3 puntos para seleccionar la ubicación del archivo</li>
+                <li>Haz clic en "Execute" para iniciar el proceso</li>
+            </ol>
+            <img src="../media/image7.png" alt="Opciones de backup">
+            <img src="../media/image49.png" alt="Configuración de backup">
+        </section>
+
+        <section>
+            <h2>Restaurar una base de datos</h2>
+            <p>El proceso de restauración es similar al de backup:</p>
+            <ol>
+                <li>Haz clic derecho sobre la base de datos o sobre "Databases"</li>
+                <li>Selecciona la opción "Restore"</li>
+                <li>Selecciona el archivo de backup que quieres restaurar</li>
+                <li>Haz clic en "Execute" para iniciar la restauración</li>
+            </ol>
+            <img src="../media/image41.png" alt="Opciones de restore">
+            <img src="../media/image31.png" alt="Configuración de restore">
+        </section>
+
+        <div class="navigation-buttons">
+            <a href="modulos.html" class="back-button">← Anterior: Módulos</a>
+            <a href="conclusiones.html" class="next-button">Siguiente: Conclusiones →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TechSolutions ERP. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

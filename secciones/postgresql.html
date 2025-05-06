@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control PostgreSQL - MSI ERP</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>MSI ERP Solutions</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="descarga.html">Descarga</a></li>
+                <li><a href="instalacion.html">Instalación</a></li>
+                <li><a href="basedatos.html">Base de Datos</a></li>
+                <li><a href="modulos.html">Módulos</a></li>
+                <li><a href="postgresql.html">PostgreSQL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="guide-container">
+        <h1>Acceso al Panel de Control de PostgreSQL</h1>
+        <p class="intro-text">Guía para gestionar copias de seguridad y restauración de la base de datos MSI ERP.</p>
+        
+        <section class="step">
+            <h2>Acceso a pgAdmin</h2>
+            <ol>
+                <li>Busca "pgAdmin" en la barra de búsqueda de Windows</li>
+                <li>Inicia la aplicación</li>
+                <li>Inicia sesión con las credenciales configuradas durante la instalación de MSI ERP</li>
+            </ol>
+            <img src="media/image44.png" alt="Acceso a pgAdmin">
+            <div class="step-note">Las credenciales por defecto suelen ser las mismas que para MSI ERP.</div>
+        </section>
+
+        <section class="step">
+            <h2>Crear copia de seguridad (Backup)</h2>
+            <ol>
+                <li>Haz clic derecho sobre la base de datos que deseas respaldar</li>
+                <li>Selecciona "Backup..."</li>
+                <li>En la pestaña "General":
+                    <ul>
+                        <li>Asigna un nombre al backup</li>
+                        <li>Selecciona el formato (por defecto "Custom")</li>
+                    </ul>
+                </li>
+                <li>En la pestaña "Dump Options":
+                    <ul>
+                        <li>Marca "Blobs" si necesitas incluir archivos binarios</li>
+                    </ul>
+                </li>
+                <li>Haz clic en los tres puntos para seleccionar ubicación del archivo</li>
+                <li>Finalmente haz clic en "Execute"</li>
+            </ol>
+            <div class="image-group">
+                <img src="media/image45.png" alt="Opciones de backup">
+                <img src="media/image46.png" alt="Ejecución de backup">
+            </div>
+            <div class="step-warning">No interrumpas el proceso hasta que finalice completamente.</div>
+        </section>
+
+        <section class="step">
+            <h2>Restaurar una base de datos</h2>
+            <ol>
+                <li>Haz clic derecho sobre "Databases" o sobre una base de datos existente</li>
+                <li>Selecciona "Restore..."</li>
+                <li>En la pestaña "General":
+                    <ul>
+                        <li>Selecciona el archivo de backup (.backup o .sql)</li>
+                        <li>Define el nombre de la nueva base de datos</li>
+                    </ul>
+                </li>
+                <li>En la pestaña "Restore Options":
+                    <ul>
+                        <li>Marca "Clean before restore" para limpiar la base existente</li>
+                    </ul>
+                </li>
+                <li>Haz clic en "Execute" para iniciar la restauración</li>
+            </ol>
+            <div class="image-group">
+                <img src="media/image47.png" alt="Opciones de restore">
+                <img src="media/image48.png" alt="Ejecución de restore">
+            </div>
+            <div class="step-note">El tiempo de restauración depende del tamaño de la base de datos.</div>
+        </section>
+
+        <section class="step">
+            <h2>Verificar la restauración</h2>
+            <p>Una vez completado el proceso:</p>
+            <ol>
+                <li>Actualiza la lista de bases de datos</li>
+                <li>Verifica que la nueva base aparece en la lista</li>
+                <li>Conéctate a ella para comprobar que los datos están correctos</li>
+            </ol>
+            <img src="media/image49.png" alt="Base de datos restaurada">
+        </section>
+
+        <div class="page-navigation">
+            <a href="modulo-ivan.html" class="back-button">← Anterior: Módulo de Gastos</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MSI ERP Solutions. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

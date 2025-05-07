@@ -1,10 +1,4 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Diseño base global */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -44,108 +38,83 @@ nav ul li a:hover {
     color: #3498db;
 }
 
-.hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 0 1rem;
+main {
+    padding: 2rem;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+#marca {
+    color: white;
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: #3498db;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
+/* Estilo para títulos */
+h1, h2, h3 {
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+}
+
+/* Enlaces */
+a {
+    color: #2563eb;
     text-decoration: none;
-    margin-top: 1rem;
-    transition: background-color 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #2980b9;
+a:hover {
+    text-decoration: underline;
 }
 
-.features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 3rem 1rem;
-}
-
-.feature {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.feature h2 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-.about, .module-detail, .installation {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.about h1, .module-detail h1, .installation h1 {
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-}
-
-.step {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.step img {
+/* Imágenes responsivas */
+img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 1rem auto;
 }
 
-footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
+/* Contenedor general */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 1rem;
-    margin-top: 2rem;
 }
 
+/* Estilo para tarjetas y secciones */
+.card, .section {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Tablas responsivas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
+    body {
+        font-size: 16px;
     }
-    
-    nav ul {
-        margin-top: 1rem;
+
+    header, footer {
+        padding: 1rem;
     }
-    
-    .hero h1 {
-        font-size: 2rem;
+
+    main {
+        padding: 1rem;
     }
-    
-    .features {
-        grid-template-columns: 1fr;
+
+    .card, .section {
+        padding: 1rem;
     }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Módulo de Gastos - MSI ERP</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
@@ -24,105 +24,52 @@
     </header>
 
     <main class="module-guide">
-        <h1>Módulo de Gastos</h1>
-        <p class="module-description">Sistema completo para la gestión, aprobación y pago de gastos de empleados.</p>
+        <h1>Módulo de Contratos de empleados</h1>
+        <p class="module-description">Sistema completo para la gestión, de los contratos de los empleados.</p>
         
         <section class="module-section">
             <h2>Activación del módulo</h2>
             
             <div class="step">
                 <h3>Paso 1: Activar módulo</h3>
-                <p>Desde "Configuración" > "Módulos", busca y activa el módulo de Gastos.</p>
-                <img src="media/image28.png" alt="Activación del módulo de gastos">
+                <p>Desde "Configuración" > "Módulos", busca y activa el módulo de "Contratos de empleados".</p>
+                <img src="../imagenes/captura/img17.png" alt="Activación del módulo de contratos de empleados">
                 <div class="step-note">Es necesario tener permisos de administrador.</div>
             </div>
         </section>
 
         <section class="module-section">
-            <h2>Creación de un gasto</h2>
+            <h2>Creación de un contrato</h2>
             
             <div class="step">
-                <h3>Paso 1: Acceder al menú de gastos</h3>
-                <p>Selecciona "Gastos" en el menú principal para ver las opciones disponibles.</p>
-                <img src="media/image29.png" alt="Menú de gastos">
+                <h3>Paso 1: Acceder al menú de contratos de empleados</h3>
+                <p>Selecciona empleado al que quieras crear/modificar/eliminar de contrato, en este caso "Administrador".</p>
+                <img src="../imagenes/captura/img18.png">
             </div>
             
             <div class="step">
-                <h3>Paso 2: Crear nuevo gasto</h3>
-                <p>Haz clic en "Crear" y completa el formulario con los datos del gasto:</p>
-                <ol>
-                    <li>Descripción del gasto</li>
-                    <li>Fecha</li>
-                    <li>Categoría</li>
-                    <li>Importe</li>
-                    <li>Adjuntar comprobante</li>
-                </ol>
-                <img src="media/image30.png" alt="Formulario de creación de gasto">
+                <h3>Paso 2: Crear nuevo contrato</h3>
+                <p>Haz clic en "Contratos":</p>
+                <img src="../imagenes/captura/img19.png">
             </div>
             
             <div class="step">
-                <h3>Paso 3: Guardar y enviar</h3>
-                <p>Una vez completado, haz clic en "Guardar" y luego en "Enviar para aprobación".</p>
-                <img src="media/image31.png" alt="Envío para aprobación">
-                <div class="step-note">El estado cambiará a "Por Aprobar".</div>
+                <h3>Paso 3: Datos del contrato</h3>
+                <p>Aqui podremos rellenar los datos de la persona que le vayamos a contratar. Abajo podemos establecer el sueldo y las observaciones/comentarios</p>
+                <img src="../imagenes/captura/img20.png">
+            </div>
+
+            <div class="step">
+                <h3>Paso 4: Información contrato</h3>
+                <p>Como se puede ver el contrato aparecerá creado y con el estado "Nuevo" y con otros datos. El estado va cambiando mietras el tiempo transcurre, por ejemplo: Si el contrato exede la fecha de finalizacion pues tendra el estado de "Caducado".</p>
+                <img src="../imagenes/captura/img21.png">
+            </div>
+
+            <div class="page-navigation">
+                <a href="modulo-victor.html" class="back-button">← Anterior: Módulo de Marketing</a>
+                <a href="postgresql.html" class="next-button">Siguiente: PostgreSQL →</a>
             </div>
         </section>
-
-        <section class="module-section">
-            <h2>Proceso de aprobación</h2>
-            
-            <div class="step">
-                <h3>Paso 1: Crear informe de gasto</h3>
-                <p>El solicitante debe crear un informe detallado del gasto.</p>
-                <img src="media/image34.png" alt="Creación de informe de gasto">
-            </div>
-            
-            <div class="step">
-                <h3>Paso 2: Revisión del gerente</h3>
-                <p>El gerente recibe la solicitud y puede aprobar o rechazar.</p>
-                <img src="media/image35.png" alt="Revisión del gerente">
-            </div>
-            
-            <div class="step">
-                <h3>Paso 3: Aprobación</h3>
-                <p>Si se aprueba, se procede al registro y pago del gasto.</p>
-                <img src="media/image36.png" alt="Aprobación de gasto">
-            </div>
-            
-            <div class="step">
-                <h3>Paso 4: Rechazo</h3>
-                <p>Si se rechaza, se debe especificar el motivo.</p>
-                <img src="media/image42.png" alt="Rechazo de gasto">
-                <div class="step-warning">Los gastos rechazados no pueden ser pagados.</div>
-            </div>
-        </section>
-
-        <section class="module-section">
-            <h2>Registro y pago</h2>
-            
-            <div class="step">
-                <h3>Paso 1: Registrar gasto aprobado</h3>
-                <p>Desde contabilidad, registrar el gasto en el sistema.</p>
-                <img src="media/image37.png" alt="Registro de gasto">
-            </div>
-            
-            <div class="step">
-                <h3>Paso 2: Realizar el pago</h3>
-                <p>Generar el pago asociado al gasto registrado.</p>
-                <img src="media/image38.png" alt="Generación de pago">
-            </div>
-            
-            <div class="step">
-                <h3>Paso 3: Comprobación</h3>
-                <p>Verificar que el estado ha cambiado a "Pagado".</p>
-                <img src="media/image39.png" alt="Estado pagado">
-            </div>
-        </section>
-
-        <div class="page-navigation">
-            <a href="modulo-victor.html" class="back-button">← Anterior: Módulo de Marketing</a>
-            <a href="postgresql.html" class="next-button">Siguiente: PostgreSQL →</a>
-        </div>
     </main>
 
     <footer>

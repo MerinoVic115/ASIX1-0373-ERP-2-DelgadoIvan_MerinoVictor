@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Gastos - MSI ERP</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>MSI ERP Solutions</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="descarga.html">Descarga</a></li>
+                <li><a href="instalacion.html">Instalación</a></li>
+                <li><a href="basedatos.html">Base de Datos</a></li>
+                <li><a href="modulos.html">Módulos</a></li>
+                <li><a href="postgresql.html">PostgreSQL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="module-guide">
+        <h1>Módulo de Gastos</h1>
+        <p class="module-description">Sistema completo para la gestión, aprobación y pago de gastos de empleados.</p>
+        
+        <section class="module-section">
+            <h2>Activación del módulo</h2>
+            
+            <div class="step">
+                <h3>Paso 1: Activar módulo</h3>
+                <p>Desde "Configuración" > "Módulos", buscaremos y activaremos el módulo de Gastos.</p>
+                <img src="../imagenes/captura/img22.png">
+            </div>
+        </section>
+
+        <section class="module-section">
+            <h2>Creación de un gasto</h2>
+            
+            <div class="step">
+                <h3>Paso 1: Acceder al menú de gastos</h3>
+                <p>Selecciona "Gastos" en el menú principal para ver las opciones disponibles. Las dos opciones principales que tenemos son las siguientes:</p>
+                <br>
+                <ol>
+                    <li>Nuevo: Esta opcion nos permite crear un gasto nuevo desde cero.</li>
+                    <li>Subir: Esta opcion nos permite subir un gasto ya existente en nuesto equipo.</li>
+                </ol>
+                <img src="../imagenes/captura/img23.png">
+            </div>
+            
+            <div class="step">
+                <h3>Paso 2: Crear nuevo gasto</h3>
+                <p>Haremos clic en "Nuevo" para comenzar a crear el nuevo gasto. Dentro nos pedira rellenar los siguientes campos:</p>
+                <ol>
+                    <li>Categoria</li>
+                    <li>Fecha del gasto</li>
+                    <li>Total</li>
+                    <li>Impuestos incluidos (opcional)</li>
+                    <li>Empleado al que atribuir el gasto</li>
+                    <li>Pagado por:</li>
+                </ol>
+                <img src="../imagenes/captura/img25.png">
+            </div>
+            
+            <div class="step">
+                <h3>Paso 3: Guardar y enviar</h3>
+                <p>Una vez completado, el gasto se guardara automaticamente y podremos comprobarlo accediendo al menu de informe de gastos.</p>
+                <img src="../imagenes/captura/img26.png">
+                <img src="../imagenes/captura/img27.png">
+            </div>
+        </section>
+
+        <section class="module-section">
+            <h2>Proceso de aprobación</h2>
+            
+            <div class="step">
+                <h3>Paso 1: Crear informe de gasto</h3>
+                <p>Para poder continuar con el estado del gasto entraremos a dicho gasto y deberemos de crear un informe. En este informe deberemos de poner distintos datos como el empleado y el gerente al que hay que enviarlo.</p>
+                <img src="../imagenes/captura/img28.png">
+            </div>
+            
+            <div class="step">
+                <h3>Paso 2: Revisión del gerente</h3>
+                <p>Una vez enviado, si accedemos como gerente podremos ver el informe del gasto y podremos decidir si aprobamos o rechazamos el gasto.</p>
+                <img src="../imagenes/captura/img29.png">
+            </div>
+            
+            <div class="step">
+                <h3>Paso 3: Aprobación</h3>
+                <p>En caso de aprobarlo a continuación deberemos de crear el registro del gasto.</p>
+                <img src="../imagenes/captura/img29.png">
+            </div>
+            
+            <div class="step">
+                <h3>Paso 4: Rechazo</h3>
+                <p>En caso de rechazarlo, nos aparecera esta pestaña emergente y deberemos de agregar un motivo al rechazo del gasto.</p>
+                <img src="../imagenes/captura/img38.png">
+            </div>
+        </section>
+
+        <section class="module-section">
+            <h2>Registro y pago</h2>
+            
+            <div class="step">
+                <h3>Paso 1: Registrar gasto aprobado</h3>
+                <p>En caso de aprobarlo a continuación deberemos de crear el registro del gasto.</p>
+                <img src="../imagenes/captura/img33.png">
+            </div>
+            
+            <div class="step">
+                <h3>Paso 2: Realizar el pago</h3>
+                <p>Y una vez creado el registro procederemos a registrar el pago. Nos aparecerá esta pestaña emergente con los datos del importe, la fecha y demás datos. Una vez comprobemos que sean correctos crearemos el pago.</p>
+                <img src="../imagenes/captura/img34.png">
+            </div>
+            
+            <div class="step">
+                <h3>Paso 3: Comprobación</h3>
+                <p>Por último veremos el informe anterior y nos aparecerá como ya pagado.</p>
+                <img src="../imagenes/captura/img35.png">
+            </div>
+
+            <div class="step">
+                <h3>Paso 4: Historial de los procesos</h3>
+                <p>Mientras creamos todo este proceso a la derecha de la pantalla nos aparecerá un registro con todos los pasos realizados en dicho pago, junto con la fecha de cada avance de estado.</p>
+                <img src="../imagenes/captura/img36.png">
+            </div>
+
+            <div class="step">
+                <h3>Paso 5: Historial de los procesos</h3>
+                <p>Por último veremos los informes y veremos el gasto no pagado (el anterior informe de prueba) y el gasto pagado (este último informe).</p>
+                <img src="../imagenes/captura/img39.png">
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="modulo-victor.html" class="back-button">← Anterior: Módulo de Marketing</a>
+            <a href="postgresql.html" class="next-button">Siguiente: PostgreSQL →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MSI ERP Solutions. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
